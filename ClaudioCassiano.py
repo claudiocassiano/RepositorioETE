@@ -10,7 +10,7 @@ while opção != 5:
     print("[ 5 ] - Sair do Programa\n")
 
     opção = int(input("DIGITE DE 0 a 5 PARA EXIBIR AS OPÇÕES: "))
-    
+
     if opção == 0:
         # Opção 0 Participantes % gênero Masculino e feminino
         arq = open('dados.txt', "r")
@@ -173,7 +173,6 @@ while opção != 5:
         print(f'Eficácia Feminina: {int(eficaciaF)} %\n')
 
     elif opção == 5:
-        print("Você encerrou o programa.\n")
-
+        print("\nVocê encerrou o programa.\n")
 
 print("Fim do programa!\n")
