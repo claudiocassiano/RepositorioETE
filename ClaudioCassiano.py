@@ -10,6 +10,7 @@ while opção != 5:
     print("[ 5 ] - Sair do Programa\n")
 
     opção = int(input("DIGITE DE 0 a 5 PARA EXIBIR AS OPÇÕES: "))
+    
     if opção == 0:
         # Opção 0 Participantes % gênero Masculino e feminino
         arq = open('dados.txt', "r")
@@ -24,7 +25,7 @@ while opção != 5:
                 fem = fem + 1
         masc = int(masc / qtd * 100)
         fem = int(fem / qtd * 100)
-        print(f'Participantes Feminino: {fem} % e Masculino: {masc} %')
+        print(f'\nParticipantes Feminino: {fem} % e Masculino: {masc} %\n')
     elif opção == 1:
         arq = open('dados.txt', "r")
         linhas = arq.readlines()
@@ -100,7 +101,7 @@ while opção != 5:
         simCov = simCov * 100 / qtd
         naoCov = naoCov * 100 / qtd
         print(
-            f'Contrairam covid: {int(simCov)} % e Não contrairam covid: {int(naoCov)} %')
+            f'Contrairam covid: {int(simCov)} % e Não contrairam covid: {int(naoCov)} %\n')
 
     elif opção == 2:
         # opção 2- Eficiencia geral - placebo e pegou covide e vacina e pegou covid
@@ -118,7 +119,7 @@ while opção != 5:
 
         eficacia = 100 * (a - b) / a
 #print(f'Placebo que pegou covid: {ps} % \nVacina que pegou covid: {vs} %')
-        print(f'Eficácia geral da vacina: {round(eficacia, 2)} %')
+        print(f'Eficácia geral da vacina: {round(eficacia, 2)} %\n')
     elif opção == 3:
 
         arq = open('dados.txt', 'r')
@@ -147,7 +148,7 @@ while opção != 5:
 
         print('A eficácia para jovens é: ', int(eficaciaJovem), '%')
         print('A eficácia para adultos é: ', int(eficaciaAdulto), '%')
-        print('A eficácia para os idosos é: ', int(eficaciaIdoso), '%')
+        print('A eficácia para os idosos é: ', int(eficaciaIdoso), '%\n')
     elif opção == 4:
         arq = open('dados.txt', "r")
         linhas = arq.readlines()
@@ -169,7 +170,7 @@ while opção != 5:
         eficaciaM = 100*(am - bm)/am
         eficaciaF = 100*(af - bf)/af
         print(f'Eficácia Masculina: {int(eficaciaM)} %')
-        print(f'Eficácia Feminina: {int(eficaciaF)} %')
+        print(f'Eficácia Feminina: {int(eficaciaF)} %\n')
 
     elif opção == 5:
         print("Você encerrou o programa.\n")
